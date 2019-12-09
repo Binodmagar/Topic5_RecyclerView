@@ -20,12 +20,12 @@ public class Contacts {
         this.name = name;
     }
 
-    public String getPhoeNo() {
+    public String getPhoneNo() {
         return phoneNo;
     }
 
-    public void setPhoeNo(String phoeNo) {
-        this.phoneNo = phoeNo;
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
     }
 
     public int getImage() {

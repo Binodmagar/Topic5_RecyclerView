@@ -1,6 +1,7 @@
 package com.binod.topic5_recyclerview;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -25,19 +26,27 @@ public class contactsAdapter extends RecyclerView.Adapter<contactsAdapter.Contac
     @NonNull
     @Override
     public ContactsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
-        //attach in design
+        //attach in design or view holder
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.contact_laypit, parent, false);
+        return new ContactsViewHolder(view);
+
     }
 
     @Override
     public void onBindViewHolder(@NonNull ContactsViewHolder holder, int position) {
-        //attach data in design by one by one
+        //attach data or design  in viewholder by one by one
+        Contacts contacts = contactsList.get(position);
+        holder.imgRoman.setImageResource(contacts.getImage());
+        holder.tvName.setText(contacts.getName());
+        holder.tvPhone.setText(contacts.getPhoneNo());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return contactsList.size();
         //count number of list or data shown
+        //how many times to show  data or how many data are
     }
 
     public class ContactsViewHolder extends RecyclerView.ViewHolder {

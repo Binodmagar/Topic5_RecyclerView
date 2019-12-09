@@ -8,8 +8,8 @@
         android:id="@+id/imgRoman"
         android:src="@drawable/logo"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:scaleType="fitXY"/>
     <TextView
         android:layout_margin="20dp"
