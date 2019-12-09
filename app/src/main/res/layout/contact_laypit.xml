@@ -7,14 +7,18 @@
     android:layout_height="wrap_content"
     >
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgRoman"
         android:layout_width="102dp"
         android:layout_height="106dp"
         android:layout_marginStart="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
 
     <TextView
         android:id="@+id/tvName"

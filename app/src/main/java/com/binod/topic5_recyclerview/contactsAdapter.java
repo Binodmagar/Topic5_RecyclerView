@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class contactsAdapter extends RecyclerView.Adapter<contactsAdapter.ContactsViewHolder> {
 
     Context context;//to get name of activities that java class get data from activity
@@ -52,7 +54,7 @@ public class contactsAdapter extends RecyclerView.Adapter<contactsAdapter.Contac
     public class ContactsViewHolder extends RecyclerView.ViewHolder {
 
         //declaration
-        ImageView imgRoman;
+        CircleImageView imgRoman;
         TextView tvName, tvPhone;
 
         public ContactsViewHolder(@NonNull View itemView) {
